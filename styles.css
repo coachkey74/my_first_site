@@ -53,3 +53,14 @@ h1 + p{
 #cta-button:hover{
      scale: 1.1;   
 }
+.video-player{
+    margin-top: 30px;
+    width: min(1100px, 100%);
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+}
+/*min function is important for responsive web design allow content to be properly dispalayed no mater what type of device you are on, alsp adding aspect ratio
+can also use the max-widt
+-another option is the overflow: hidden; then everything that is bigger than the element will be cut off 
+adding overflow: scroll; will add a scrollbar, allowing you to scroll inside the element so we can scroll */
+
