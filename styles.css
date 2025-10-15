@@ -63,4 +63,33 @@ h1 + p{
 can also use the max-widt
 -another option is the overflow: hidden; then everything that is bigger than the element will be cut off 
 adding overflow: scroll; will add a scrollbar, allowing you to scroll inside the element so we can scroll */
-
+.products-container{
+    margin-top: 30px;
+}
+.item{
+    box-sizing: border-box; /*creates the padding inwards*/
+    width: 300px;
+    height: 300px;
+    display: inline-block; /*div are norammly block elements so we add the dispal inline so the are side by side
+    div normally start each one on a separate line*/
+    margin: 0 20px;
+    margin-bottom: 20px;
+    align-content: center;
+    padding: 20px;
+    border-radius: 30px;
+    /*when display is shrink or screen is smaller in order to keep the space between them we add a margin bottom*/
+}
+.item > h2{
+    margin-bottom: 10px;
+}
+.item:first-child{
+    border: 1px solid black;
+}
+.item:nth-child(2){
+    background-color: #722cff;
+    color: #e3e3e3;
+}
+.item:last-child{
+    background-color: black;
+    color: white;
+}
