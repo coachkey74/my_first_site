@@ -93,3 +93,30 @@ adding overflow: scroll; will add a scrollbar, allowing you to scroll inside the
     background-color: black;
     color: white;
 }
+form{
+    margin-top: 30px;
+}
+input{
+    display: block; /*the normally have a display of inline which is why the were orginally side by side */
+    margin: 0 auto; /*to center the inputs horizontally set margin
+    zero auto and then margin-bottom of 15 pixels to create a gap between them*/
+    margin-bottom: 15px;
+    font: inherit; /*form elements like buttons and input fields do noy inherit the font settings by defaul like others
+    which is why we have to apply font inherit manuall*/
+    border-radius: 30px;
+}
+input[type="text"], input[type="password"]{
+    padding: 5px 30px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    background-color: #ebedf5;
+}   
+input[type="submit"]{
+     width: 200px;
+     padding: 10px;
+     background-color: blue;
+     color: white;
+     font-weight: 600;
+     border: none;
+}
